@@ -16,5 +16,19 @@ namespace Taller1_Datos
         {
             InitializeComponent();
         }
+
+        private void datos_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog buscarArchivos = new OpenFileDialog();
+            if(buscarArchivos.ShowDialog() == DialogResult.OK)
+            {
+                txtDireccion.Text = buscarArchivos.FileName; 
+            }
+        }
+
+        private void lblDireccion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
