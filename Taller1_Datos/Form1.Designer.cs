@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace Taller1_Datos
 {
     partial class Form1
@@ -86,6 +88,7 @@ namespace Taller1_Datos
         private System.Windows.Forms.Button datos;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private DataGridViewCellEventHandler dataGridView1_CellContentClick;
     }
 }
 
