@@ -37,7 +37,7 @@ namespace Taller1_Datos
             // 
             // datos
             // 
-            this.datos.Location = new System.Drawing.Point(82, 116);
+            this.datos.Location = new System.Drawing.Point(79, 68);
             this.datos.Name = "datos";
             this.datos.Size = new System.Drawing.Size(178, 46);
             this.datos.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace Taller1_Datos
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(386, 128);
+            this.txtDireccion.Location = new System.Drawing.Point(386, 80);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(320, 22);
             this.txtDireccion.TabIndex = 2;
@@ -56,12 +56,13 @@ namespace Taller1_Datos
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(82, 201);
+            this.dataGridView1.Location = new System.Drawing.Point(47, 175);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(624, 312);
+            this.dataGridView1.Size = new System.Drawing.Size(691, 338);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form1
             // 
@@ -73,6 +74,7 @@ namespace Taller1_Datos
             this.Controls.Add(this.datos);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
