@@ -103,6 +103,7 @@ namespace Taller1_Datos
             }
         }
 
+        //grafico
         private void chart1_Click(object sender, EventArgs e)
         {
             string[] series = { "" };
