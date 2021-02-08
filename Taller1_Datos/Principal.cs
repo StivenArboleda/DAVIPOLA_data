@@ -19,7 +19,7 @@ namespace Taller1_Datos
         public string codDepar { get; set; }
         public string codMun { get; set; }
         public string departament { get; set; }
-        public string municipality { get; set; }
+        public string municipaly { get; set; }
         public string type { get; set; }
     }
 

@@ -31,17 +31,24 @@ namespace Taller1_Datos
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.datos = new System.Windows.Forms.Button();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // datos
             // 
-            this.datos.Location = new System.Drawing.Point(79, 68);
+            this.datos.Location = new System.Drawing.Point(14, 85);
+            this.datos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.datos.Name = "datos";
-            this.datos.Size = new System.Drawing.Size(178, 46);
+            this.datos.Size = new System.Drawing.Size(200, 58);
             this.datos.TabIndex = 0;
             this.datos.Text = "CARGAR DATOS";
             this.datos.UseVisualStyleBackColor = true;
@@ -49,34 +56,72 @@ namespace Taller1_Datos
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(290, 80);
+            this.txtDireccion.Location = new System.Drawing.Point(220, 100);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(577, 22);
+            this.txtDireccion.Size = new System.Drawing.Size(649, 26);
             this.txtDireccion.TabIndex = 2;
             this.txtDireccion.Text = "Ubicación de tu archivo";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 120);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 150);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(828, 431);
+            this.dataGridView1.Size = new System.Drawing.Size(745, 539);
             this.dataGridView1.TabIndex = 3;
+            // 
+            // chart1
+            // 
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
+            this.chart1.Location = new System.Drawing.Point(780, 150);
+            this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chart1.Name = "chart1";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart1.Series.Add(series4);
+            this.chart1.Size = new System.Drawing.Size(525, 539);
+            this.chart1.TabIndex = 4;
+            this.chart1.Text = "chart1";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Codigo Departamento",
+            "Codigo Municipio",
+            "Nombre departamento",
+            "Nombre municipio",
+            "Tipo"});
+            this.comboBox1.Location = new System.Drawing.Point(926, 100);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(213, 28);
+            this.comboBox1.TabIndex = 5;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 563);
+            this.ClientSize = new System.Drawing.Size(1318, 704);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.datos);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,6 +133,8 @@ namespace Taller1_Datos
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.DataGridView dataGridView1;
         private DataGridViewCellEventHandler dataGridView1_CellContentClick;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private ComboBox comboBox1;
     }
 }
 
