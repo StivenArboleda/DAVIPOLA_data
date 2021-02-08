@@ -103,7 +103,20 @@ namespace Taller1_Datos
             }
         }
 
+        private void chart1_Click(object sender, EventArgs e)
+        {
+            string[] series = { "" };
+            int[] puntos = { 0, 20, 40, 60, 80, 100, 120};
 
+            chart1.Palette = ChartColorPalette.Pastel;
+
+            chart1.Titles.Add("cantidad de municipios por departamento");
+
+            for(int i = 0; i < series.Length; i++)
+            {
+
+            }
+        }
     }
 
 }
