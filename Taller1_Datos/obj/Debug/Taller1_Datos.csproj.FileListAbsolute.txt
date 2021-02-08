@@ -18,3 +18,11 @@ C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\obj\Debug\Taller1_Dato
 C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\obj\Debug\Taller1_Datos.csproj.CoreCompileInputs.cache
 C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\obj\Debug\Taller1_Datos.exe
 C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\obj\Debug\Taller1_Datos.pdb
+C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\bin\Debug\SpreadsheetLight.dll
+C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\bin\Debug\System.Drawing.Common.dll
+C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\bin\Debug\System.IO.Packaging.dll
+C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\bin\Debug\SpreadsheetLight.xml
+C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\bin\Debug\System.IO.Packaging.xml
+C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\obj\Debug\Taller1_Datos.csproj.CopyComplete

@@ -12,13 +12,8 @@ namespace Taller1_Datos
     class Principal
     {
 
-        public Principal(string codDepar, string codMun, string department, string municipality, string type)
+        public Principal()
         {
-            this.codDepar = codDepar;
-            this.codMun = codMun;
-            this.departament = department;
-            this.municipality = municipality;
-            this.type = type;
         }
 
         public string codDepar { get; set; }

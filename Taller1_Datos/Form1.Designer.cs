@@ -49,28 +49,27 @@ namespace Taller1_Datos
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(386, 80);
+            this.txtDireccion.Location = new System.Drawing.Point(290, 80);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(320, 22);
+            this.txtDireccion.Size = new System.Drawing.Size(577, 22);
             this.txtDireccion.TabIndex = 2;
             this.txtDireccion.Text = "Ubicación de tu archivo";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(47, 175);
+            this.dataGridView1.Location = new System.Drawing.Point(39, 120);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(691, 338);
+            this.dataGridView1.Size = new System.Drawing.Size(828, 431);
             this.dataGridView1.TabIndex = 3;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 525);
+            this.ClientSize = new System.Drawing.Size(890, 563);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.datos);
