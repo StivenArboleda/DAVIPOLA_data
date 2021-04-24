@@ -15,7 +15,7 @@ namespace Taller1_Datos
 {
     public partial class Form1 : Form
     {
-        private string path = @"C:\Users\Windows 10\Desktop\CSharp-Workshop\Taller1_Datos\Data\DANE.xlsx";
+        private string path = @"C:\Users\Windows 10\Desktop\DAVIPOLA_data\Taller1_Datos\Data\DANE.xlsx";
         public Form1()
         {
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace Taller1_Datos
         private void datos_Click(object sender, EventArgs e)
         {
             OpenFileDialog buscarArchivos = new OpenFileDialog();
-            if(buscarArchivos.ShowDialog() == DialogResult.OK)
+            if (buscarArchivos.ShowDialog() == DialogResult.OK)
             {
                 txtDireccion.Text = path;
                 loadData();
@@ -60,8 +60,8 @@ namespace Taller1_Datos
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {            
-            if(comboBox1.SelectedIndex == 0)
+        {
+            if (comboBox1.SelectedIndex == 0)
             {
                 dataGridView1.Columns["codDepar"].Visible = true;
                 dataGridView1.Columns["codMun"].Visible = false;
@@ -69,7 +69,7 @@ namespace Taller1_Datos
                 dataGridView1.Columns["municipaly"].Visible = false;
                 dataGridView1.Columns["type"].Visible = false;
             }
-            if(comboBox1.SelectedIndex == 1)
+            if (comboBox1.SelectedIndex == 1)
             {
                 dataGridView1.Columns["codDepar"].Visible = false;
                 dataGridView1.Columns["codMun"].Visible = true;
@@ -77,7 +77,7 @@ namespace Taller1_Datos
                 dataGridView1.Columns["municipaly"].Visible = false;
                 dataGridView1.Columns["type"].Visible = false;
             }
-            if(comboBox1.SelectedIndex == 2)
+            if (comboBox1.SelectedIndex == 2)
             {
                 dataGridView1.Columns["codDepar"].Visible = false;
                 dataGridView1.Columns["codMun"].Visible = false;
@@ -85,7 +85,7 @@ namespace Taller1_Datos
                 dataGridView1.Columns["municipaly"].Visible = false;
                 dataGridView1.Columns["type"].Visible = false;
             }
-           if(comboBox1.SelectedIndex == 3)
+            if (comboBox1.SelectedIndex == 3)
             {
                 dataGridView1.Columns["codDepar"].Visible = false;
                 dataGridView1.Columns["codMun"].Visible = false;
@@ -93,7 +93,7 @@ namespace Taller1_Datos
                 dataGridView1.Columns["municipaly"].Visible = true;
                 dataGridView1.Columns["type"].Visible = false;
             }
-           if(comboBox1.SelectedIndex == 4)
+            if (comboBox1.SelectedIndex == 4)
             {
                 dataGridView1.Columns["codDepar"].Visible = false;
                 dataGridView1.Columns["codMun"].Visible = false;
@@ -106,18 +106,21 @@ namespace Taller1_Datos
         //grafico
         private void chart1_Click(object sender, EventArgs e)
         {
-            string[] series = { "" };
-            int[] puntos = { 0, 20, 40, 60, 80, 100, 120};
+            string[] series = {"Antioquia" };
+            int[] puntos = { 0, 20, 40, 60, 80, 100, 120 };
 
             chart1.Palette = ChartColorPalette.Pastel;
 
-            chart1.Titles.Add("cantidad de municipios por departamento");
-
-            for(int i = 0; i < series.Length; i++)
+            for (int i = 0; i < series.Length; i++)
             {
 
             }
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
-
 }

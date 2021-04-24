@@ -45,10 +45,9 @@ namespace Taller1_Datos
             // 
             // datos
             // 
-            this.datos.Location = new System.Drawing.Point(14, 85);
-            this.datos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.datos.Location = new System.Drawing.Point(12, 68);
             this.datos.Name = "datos";
-            this.datos.Size = new System.Drawing.Size(200, 58);
+            this.datos.Size = new System.Drawing.Size(178, 46);
             this.datos.TabIndex = 0;
             this.datos.Text = "CARGAR DATOS";
             this.datos.UseVisualStyleBackColor = true;
@@ -56,23 +55,22 @@ namespace Taller1_Datos
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(220, 100);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDireccion.Location = new System.Drawing.Point(196, 80);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(649, 26);
+            this.txtDireccion.Size = new System.Drawing.Size(577, 22);
             this.txtDireccion.TabIndex = 2;
             this.txtDireccion.Text = "Ubicación de tu archivo";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 150);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 120);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(745, 539);
+            this.dataGridView1.Size = new System.Drawing.Size(662, 431);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // chart1
             // 
@@ -80,14 +78,13 @@ namespace Taller1_Datos
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(780, 150);
-            this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chart1.Location = new System.Drawing.Point(693, 120);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(525, 539);
+            this.chart1.Size = new System.Drawing.Size(467, 431);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
@@ -101,23 +98,23 @@ namespace Taller1_Datos
             "Nombre departamento",
             "Nombre municipio",
             "Tipo"});
-            this.comboBox1.Location = new System.Drawing.Point(926, 100);
+            this.comboBox1.Location = new System.Drawing.Point(823, 80);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(213, 28);
+            this.comboBox1.Size = new System.Drawing.Size(190, 24);
             this.comboBox1.TabIndex = 5;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1318, 704);
+            this.ClientSize = new System.Drawing.Size(1172, 563);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.datos);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
